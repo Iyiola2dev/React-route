@@ -5,11 +5,17 @@ import "./index.css";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
+import ThemeProvider from "./contexts/ThemeProvider";
+import { AuthProvider } from "./contexts/AuthProvider";
 
 createRoot(document.getElementById("root")).render(
   <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <AuthProvider>
+      <ThemeProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ThemeProvider>
+    </AuthProvider>
   </Router>
 );

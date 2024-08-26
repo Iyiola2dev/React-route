@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Aeonik-bold";
+    src: url("../src/font/AeonikTRIAL-Bold.otf");
+  }
+@font-face {
+    font-family: "Aeonik-regular";
+    src: url("../src/font/AeonikTRIAL-Regular.otf");
+  }
+@font-face {
+    font-family: "Aeonik-light";
+    src: url("../src/font/AeonikTRIAL-Light.otf");
+  }
+
 h1{
     font-size: 8rem;
     font-weight: 700;
